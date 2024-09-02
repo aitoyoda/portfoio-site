@@ -21,6 +21,6 @@ jobs:
           token: ${{ secrets.VERCEL_TOKEN }}
           org-id: ${{ secrets.VERCEL_ORG_ID }}
           project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PORTFOLIO_SITE_GITHUB_TOKEN }}
           production: ${{ github.ref == 'refs/heads/main' }} # main ブランチにpushされたら本番環境にデプロイする
           prebuilt: true
