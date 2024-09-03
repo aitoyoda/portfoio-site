@@ -3,8 +3,8 @@
 </div>
 
 # 👩🏻‍💻About Ai Toyoda
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/People/People%20Hugging.webp" alt="People Hugging" width="25" height="25" />　Hi! I'm backend engineer.
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Fire.webp" alt="Fire" width="25" height="25" />　I’m currently learning  Ruby!
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/People/People%20Hugging.webp" alt="People Hugging" width="25" height="25" />　Hi! I'm backend engineer.
+ - <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Fire.webp" alt="Fire" width="25" height="25" />　I’m currently learning  Ruby!
 
 
 ## 🏃🏻‍♀️My skills
