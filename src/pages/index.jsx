@@ -14,7 +14,7 @@ export default function Home() {
       <section className="mt-10">
         <h2 className="text-3xl font-semibold mb-4">About Me</h2>
         <p className="text-lg text-gray-700">
-          豊田愛のポートフォリオサイトです。
+          とよだあいのポートフォリオサイトです。
         </p>
       </section>
 
