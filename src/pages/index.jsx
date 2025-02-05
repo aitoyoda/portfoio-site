@@ -1,26 +1,41 @@
-import Image from "next/image";
+import React, { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+import LoadingAnimation from '@/pages/loading'
+
+// サーバーサイドレンダリングを無効化
+const TypingEffect = dynamic(() => import('@/pages/typingEffect'), {
+  ssr: false, 
+});
 
 export default function Home() {
-  return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 `}
-    >
-      <header className="text-center">
-        <h1 className="text-5xl font-bold mb-6">My Portfolio</h1>
-        <p className="text-xl text-gray-600">Welcome to my online portfolio!</p>
-        <p className="text-xl text-gray-600">ポートフォリオサイトだよ！</p>
-      </header>
-      
-      <section className="mt-10">
-        <h2 className="text-3xl font-semibold mb-4">About Me</h2>
-        <p className="text-lg text-gray-700">
-          とよだあいのポートフォリオサイトです。
-        </p>
-      </section>
+  const [loading, setLoading] = useState(true);
+  const [typingCompleted, setTypingCompleted] = useState(false);
 
-      <footer className="mt-10 text-center">
-        <p className="text-gray-500">© 2024 Ai Toyoda. All rights reserved.</p>
-      </footer>
-    </main>
+  useEffect(() => {
+    // 3秒間ローディングを表示
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // ローディング時間は調整可能
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleTypingComplete = () => {
+    setTypingCompleted(true);
+  };
+
+  return (
+    <div>
+      {loading ? (
+        <LoadingAnimation />
+      ) : (
+        <>
+        <TypingEffect onComplete={handleTypingComplete} />
+        </>
+        
+      )}
+      
+    </div>
+    
   );
 }

@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="ja">
       <Head>
       <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet"/>
       </Head>
       <body>
         <Main />
