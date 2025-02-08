@@ -9,8 +9,8 @@
   /* キューブ全体の設定 */
   .cube {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     transform-style: preserve-3d;
     transform: rotateX(45deg) rotateY(45deg); /* 初期状態で斜め上から見た角度に回転 */
     animation: rotateCube 5s infinite linear;
@@ -19,41 +19,41 @@
   /* 各面の設定 */
   .face {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     background-color: rgba(255, 255, 255, 0.8); /* 半透明の背景 */
     border: 1px solid #ccc;
   }
   
   /* キューブの各面 */
   .front {
-    transform: translateZ(75px); /* 前面 */
-    background-color: rgba(255, 0, 0, 0.8); /* 赤 */
+    transform: translateZ(25px); /* 前面 */
+    background-color: #f5c0bf; /* 赤 */
   }
   
   .back {
-    transform: rotateY(180deg) translateZ(75px); /* 背面 */
-    background-color: rgba(0, 255, 0, 0.8); /* 緑 */
+    transform: rotateY(180deg) translateZ(25px); /* 背面 */
+    background-color: #f0eae0; /* 緑 */
   }
   
   .left {
-    transform: rotateY(-90deg) translateZ(75px); /* 左面 */
-    background-color: rgba(0, 0, 255, 0.8); /* 青 */
+    transform: rotateY(-90deg) translateZ(25px); /* 左面 */
+    background-color: #c6b4d8; /* 青 */
   }
   
   .right {
-    transform: rotateY(90deg) translateZ(75px); /* 右面 */
-    background-color: rgba(255, 255, 0, 0.8); /* 黄 */
+    transform: rotateY(90deg) translateZ(25px); /* 右面 */
+    background-color: #ead4d4; /* 黄 */
   }
   
   .top {
-    transform: rotateX(90deg) translateZ(75px); /* 上面 */
-    background-color: rgba(255, 165, 0, 0.8); /* オレンジ */
+    transform: rotateX(90deg) translateZ(25px); /* 上面 */
+    background-color: #cee0e6; /* オレンジ */
   }
   
   .bottom {
-    transform: rotateX(-90deg) translateZ(75px); /* 底面 */
-    background-color: rgba(255, 255, 255, 0.8); /* 白 */
+    transform: rotateX(-90deg) translateZ(25px); /* 底面 */
+    background-color: #cee0e6; /* 白 */
   }
   
   /* キューブの回転アニメーション */

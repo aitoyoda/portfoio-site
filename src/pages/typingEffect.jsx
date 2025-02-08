@@ -30,10 +30,11 @@ const TypingEffect = () => {
   }, []);
 
   return (
-    <div>
-      <CubeAnimation />
-      <div
-        className={styles.typingAnimation}>
+    <div className={styles.container}>
+      <div className={styles.cubeWrapper}>
+        <CubeAnimation />
+      </div>
+      <div className={styles.typingAnimation}>
         {text}
       </div>
     </div>

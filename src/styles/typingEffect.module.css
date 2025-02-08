@@ -1,13 +1,26 @@
+.container {
+    display: flex;
+    align-items: flex-start; /* 上揃え */
+    justify-content: center; /* 横方向の中央寄せ */
+    gap: 20px; /* キューブとテキストの間隔 */
+    height: 100vh; /* 画面全体を占める */
+    position: relative; /* レイヤー管理 */
+}
+
 .typingAnimation {
-    position: fixed;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #c6b4d8;
+    width: auto;
     padding: 20px;
+    background-color: #c6b4d8;
     border-radius: 8px;
     color: white;
     font-size: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 2;
 }
-  
+
+.cubeWrapper {
+    margin-top: 35px; /* タイピングエフェクトの高さに合わせる */
+}
