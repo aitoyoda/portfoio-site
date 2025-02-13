@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import dynamic from 'next/dynamic';
 import gsap from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
 import styles from '@/styles/typingEffect.module.css';
